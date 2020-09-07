@@ -1,0 +1,7 @@
+C:\Users\Harshit\Source\Repos\ErosiousHarsh\C_Sharp-Assignment2\Assignment2-6\bin\Debug\Assignment2-6.exe.config
+C:\Users\Harshit\Source\Repos\ErosiousHarsh\C_Sharp-Assignment2\Assignment2-6\bin\Debug\Assignment2-6.exe
+C:\Users\Harshit\Source\Repos\ErosiousHarsh\C_Sharp-Assignment2\Assignment2-6\bin\Debug\Assignment2-6.pdb
+C:\Users\Harshit\Source\Repos\ErosiousHarsh\C_Sharp-Assignment2\Assignment2-6\obj\Debug\Assignment2-6.csprojAssemblyReference.cache
+C:\Users\Harshit\Source\Repos\ErosiousHarsh\C_Sharp-Assignment2\Assignment2-6\obj\Debug\Assignment2-6.csproj.CoreCompileInputs.cache
+C:\Users\Harshit\Source\Repos\ErosiousHarsh\C_Sharp-Assignment2\Assignment2-6\obj\Debug\Assignment2-6.exe
+C:\Users\Harshit\Source\Repos\ErosiousHarsh\C_Sharp-Assignment2\Assignment2-6\obj\Debug\Assignment2-6.pdb
