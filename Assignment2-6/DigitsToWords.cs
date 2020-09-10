@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Assignment2_6
 {
@@ -6,7 +8,7 @@ namespace Assignment2_6
     {
         String digitToWords(int n)
         {
-            String[] ones = { "zer0", "one", "two", "three", "four", "five", "five", "six", "seven", "eight", "nine", "ten" };
+            String[] ones = { "zer0", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten" };
             String[] tens = { "", "ten", "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninty"};
             String[] others = { "hundered", "thousand", "lakh", "crore" };
             String final = "";
@@ -33,9 +35,29 @@ namespace Assignment2_6
             a[c] = n;
             Array.Reverse(a);
 
-            foreach(int x in a)
+            int last = a[a.Length - 1];
+            int lastTwo = (a[a.Length - 2] * 10) + a[a.Length - 1];
+            int firstTwo = (a[0] * 10) + a[1];
+            int second = a[1];
+
+
+            if ((lastTwo >= 11 && lastTwo <= 19) || (firstTwo >=11 && firstTwo <=19))
             {
-                Console.Write(x);
+                
+                String[] spc = { "", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "ninteen" };
+                
+                if (a.Length == 1)
+                    final = ones[a[0]];
+                else if (a.Length == 2)
+                    final = spc[last];
+                else if (a.Length == 3)
+                    final = ones[a[0]] + " " + others[0] + " " + spc[last];
+                else if (a.Length == 4)
+                    final = ones[a[0]] + " " + others[1] + " " + ones[a[1]] + " " + others[0] + " " + tens[a[2]] + " " + ones[a[3]];
+                else if (a.Length == 5)
+                    final = spc[last] + " " + others[2] + " " + ones[a[1]] + " " + others[0] + " " + spc[last];
+
+                return final;
             }
 
             if (a.Length == 1)
